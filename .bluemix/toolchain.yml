@@ -4,5 +4,13 @@ template:
   name: "A minimal Toolchain"
   description: "This toolchain will be used in Functional System Test."
 services:
-  messaging:
-    service_id: slack
+  othertool:
+    service_id: customtool
+    parameters:
+      name: 'Stack Overflow'
+      description: 'Stack Overflow DevOps questions'
+      type: 'my Stack Overflow'
+      lifecyclePhase: 'LEARN'
+      imageUrl: 'https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.svg?v=6e4af45f4d66'
+      documentationUrl: 'http://stackoverflow.com/documentation'
+      dashboard_url: 'http://stackoverflow.com/search?q=bluemix+[toolchain]+or+[continuous-delivery]'
